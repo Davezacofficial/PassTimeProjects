@@ -1,7 +1,5 @@
-import requests
-import time
-import random
-import optparse
+import requests, time
+import random, optparse
 
 parser = optparse.OptionParser()
 optparse.OptionParser.format_epilog = lambda self, formatter: self.epilog
@@ -13,33 +11,28 @@ parser.add_option("-t","--time",dest="time", help="[Optional] Used to specify th
 headers = {'Content-Type': 'text/html',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',
         }
-i = 1
+def sendmessage(interval):
+    i = 1
+    while True:
+        response = requests.get(options.link, headers=headers)
+        print("\n[+] Request Sent")
+        print(f"[+] Status Code: {response.status_code}")
+        print(f"[+] Request Number: {i}")
+        print(f"[+] Time till next request: {interval} secs")
+        i = i + 1
+        time.sleep(interval)
+
 try: 
     if not options.link:
         print("[-] Please Specify a link to send requests to!")
     
     else:
         if options.time:
-            while True:
-                response = requests.get(options.link, headers=headers)
-                interval = options.time
-                print("\n[+] Request Sent")
-                print(f"[+] Status Code: {response.status_code}")
-                print(f"[+] Request Number: {i}")
-                print(f"[+] Time till next request: {options.time} secs")
-                i = i + 1
-                time.sleep(int(interval))
+            sendmessage(options.time)
 
         else:
-            while True:
-                response = requests.get(options.link, headers=headers)
-                interval = random.randint(5,30)
-                print("\n[+] Request Sent")
-                print(f"[+] Status Code: {response.status_code}")
-                print(f"[+] Request Number: {i}")
-                print(f"[+] Time till next request: {interval} secs")
-                i = i + 1
-                time.sleep(int(interval))
+            interval = random.randint(5,30)
+            sendmessage(interval)
 
 except KeyboardInterrupt:
     print("[-] CTRL + C Detected...\n[-] Quiting.. ")
