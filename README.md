@@ -47,7 +47,7 @@ such as [*bit.ly*](https://bit.ly) require header contents as follows:
 'Content-Type': 'text/html',
 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36' 
 ```
-but for other URLs, you may get away without specifying them. 
+but for other URLs, you can get away without specifying them. 
 
 It also utilizes the other libraries such as *optparse*  to parse the options provided during command execution. The other libraries include
 the *time* library to provide time intervals between each requests, it's a necessary evil required to prevent abuse the provided URLs. Last, but not the least it utilizes
