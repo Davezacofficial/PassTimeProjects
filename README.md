@@ -12,7 +12,7 @@ Disclaimer: These projects are purely for educational purpose, the author [ME!] 
 
 - Instagram : [Davezachoffical](https://www.instagram.com/davezachofficial/)	|	Twitter : [Davezacoffical](https://twitter.com/Davezacofficial)
 
-- Reddit : [Davezachoffical](https://www.reddit.com/user/Davezachofficial)
+- Reddit : [Davezachoffical](https://www.reddit.com/user/Davezachofficial)	|	Mail : [Davezach@protonmail.com](mailto:davezach@protonmail.com)
 
 
 ## URLRequests
