@@ -28,17 +28,16 @@ and libraries used to build this project.
 ### Required Packages
 Before you use this program, you would need to install the required libraries as mentioned above and can be done using the following command:
 
+```
+pip3install -r requrlrequests..txt
+```
+
 ### Usage : 
 
 ```
 python3 urlrequests.py --link https://bit.ly/ProfileGitHub --time 25 
 ```
-
-```
-pip3install -r requrlrequests..txt
-```
-
-							
+					
 ### Documentation 
 
 This a project which enables you to send requests to a certain URL either at a fixed interval of time or random interval of time by using the *requests* library.
