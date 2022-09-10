@@ -15,6 +15,7 @@ Disclaimer: These projects are purely for educational purpose, the author [ME!] 
 - Reddit : [Davezachoffical](https://www.reddit.com/user/Davezachofficial)	|	Mail : [Davezach@protonmail.com](mailto:davezach@protonmail.com)
 
 
+
 ## URLRequests
 
 You might have seen this version of code in many repos, but this is my version of the same with a few minor tweaks. The following documentation specifies the language 
@@ -29,6 +30,14 @@ and libraries used to build this project.
 ```bash
 python3 urlrequests.py --link https://bit.ly/ProfileGitHub --time 25 
 ```
+
+### Required Packages
+Before you use this program, you would need to install the required libraries as mentioned above and can be done using the following command:
+
+```
+pip3 install -r requrlrequests..txt
+```
+
 							
 ### Documentation 
 
@@ -62,6 +71,7 @@ Options:
 If time is not specified, a random time interval
 between 5 to 30 seconds would be selected between each request.
 Example: python3 urlrequests.py --link https://bit.ly/ProfileGitHub --time 20
+
 ```
 
 Hope you found this project useful, if you have any queries feel free to raise an issue or contact me using the above-mentioned means! 
