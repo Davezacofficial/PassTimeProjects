@@ -55,7 +55,7 @@ Output:
 Usage: shortener.py [options]
 
 Options:
-  -h, --help            show this help message and exit
+  -h, --help             show this help message and exit
   -l LINK, --link=LINK  [Reuqired] Used to specify a link for sending requests
   -t TIME, --time=TIME  [Optional] Used to specify the time interval between
                         each request
