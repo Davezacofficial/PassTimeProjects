@@ -8,13 +8,12 @@ Disclaimer: These projects are purely for educational purpose, the author [ME!] 
             If you are to use the code in your projects, please give the author the due credit. This repository is distributed through 
             the [**GNU Public License v3**](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
-Discord : [Davezacofficial](https://discord.com/users/585744645862981644)
+- Discord : [Davezacofficial](https://discord.com/users/585744645862981644)	|	Guilded : [Davezacofficial](https://www.guilded.gg/u/davezacofficial)
 
-Guilded : [Davezacofficial](https://www.guilded.gg/u/davezacofficial)
+- Instagram : [Davezachoffical](https://www.instagram.com/davezachofficial/)	|	Twitter : [Davezacoffical](https://twitter.com/Davezacofficial)
 
-Instagram : [Davezacoffical](https://www.instagram.com/davezachofficial/)
+- Reddit : [Davezachoffical](https://www.reddit.com/user/Davezachofficial)
 
-Twitter : [Davezacoffical](https://twitter.com/Davezacofficial)
 
 ## URLRequests
 
