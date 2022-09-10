@@ -25,17 +25,17 @@ and libraries used to build this project.
 
 ### Libraries Used : [optparse](https://docs.python.org/3/library/optparse.html), [time](https://docs.python.org/3/library/time.html), [random](https://docs.python.org/3/library/random.html), [requests](https://requests.readthedocs.io/en/latest/)
 
-### Usage : 
-
-```bash
-python3 urlrequests.py --link https://bit.ly/ProfileGitHub --time 25 
-```
-
 ### Required Packages
 Before you use this program, you would need to install the required libraries as mentioned above and can be done using the following command:
 
+### Usage : 
+
 ```
-pip3 install -r requrlrequests..txt
+python3 urlrequests.py --link https://bit.ly/ProfileGitHub --time 25 
+```
+
+```
+pip3install -r requrlrequests..txt
 ```
 
 							
