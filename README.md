@@ -114,8 +114,14 @@ Keep your token secure and store it safely, it can be used by anyone to control 
 For a description of the Bot API, see this page: https://core.telegram.org/bots/api
 ```
 
+### Usage
+```
+python PrankeMeBot.py -c xxxxxxxxx -m Sample Message -s 25
+```
+
 ### Documentation
 It utilizes several libraries in order to acheive it's desired function. It utilizes the *optparse* library to parse the options provided by the user, the *time* library is used for setting intervals between each request. It also utilizes the *random* library to set time intervals ranging from 5 to 30 seconds **if** the time interval is *not provided* during execution, a word of caution don't set the time interval below *5* seconds. Last, but the most *important* library is *asyncio* which is used to send [*asynchronous requests*](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Synchronous_and_Asynchronous_Requests) to the Telegram API.
+On execution it sends a request to the Telegram API and prints the information about the message sent and also about the receiving user.
 In order to obtain the ID of the user on telegram, follow the following steps:
 - Go to [*JsonDumpBot*](https://t.me/JsonDumpBot)
 - Forward a message from the desired user to the bot.
@@ -132,7 +138,31 @@ In order to obtain the ID of the user on telegram, follow the following steps:
 
 
 
-This project is currently compatile only with Python 2, hope to add functionallity for Python 3 in the upcoming versions.
+This project is currently compatile only with Python 2, hope to add functionallity for Python 3 in the upcoming versions. The help menu can be obtained using the following command :
+```
+python PrankMeBot.py --help
+
+Output:
+Usage: PrankMeBot.py [options]
+
+Options:
+  -h, --help            show this help message and exit
+  -c CHATID, --chatid=CHATID
+                        [Required] Used to Enter Chat ID of the  receiving
+                        user
+  -m MESSAGE, --message=MESSAGE
+                        [Required] Used to Enter the Message for the receiving
+                        user
+  -s SECS, --seconds=SECS
+                        [Optional] zzUsed to Enter the Time Delay between the
+                        Messages
+If time is not specified, a random time interval
+between 5 to 30 seconds would be selected between each request.
+Example: python PrankeMeBot.py -c 000000000 -m Sample Message -s 25
+```
+
+### Credits
+This project was based on the a repository by *@rcbonz*, check out his repository titled [Telegram-python-bot](https://github.com/rcbonz/Telegram-python-bot)
 
 
 ## Future Projects [Coming Soon!]
