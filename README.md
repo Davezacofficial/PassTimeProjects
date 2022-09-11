@@ -164,6 +164,9 @@ Example: python PrankeMeBot.py -c 000000000 -m Sample Message -s 25
 ### Credits
 This project was based on the a repository by *@rcbonz*, check out his repository titled [Telegram-python-bot](https://github.com/rcbonz/Telegram-python-bot)
 
+### Future Improvements
+- HouseKeeping & Code Beautification
+- Python3 Compatible, while maintainig cross-compatibility
 
 
 ## Future Projects [Coming Soon!]
