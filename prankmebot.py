@@ -1,5 +1,5 @@
 import telegram, time, random
-import asyncio, optpars
+import asyncio, optparse
 
 # Option Parsing
 parser = optparse.OptionParser()
