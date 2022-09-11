@@ -1,6 +1,6 @@
 # Introduction
 
-Welcome, this repository is a compilation of my *pass-time projects*. Most of these will be based on python but, would try to include
+Welcome, this repository is a compilation of my *pass-time projects*. Most of these will be based on python but, eill try to include
 projects in other languages as well!. So, I hope you enjoy & benefit from this repository, it will be open to suggestions and additions
 feel free to contact me through the means below for collaborations and queries which you may have. Happy Coding!
 
@@ -80,6 +80,60 @@ Hope you found this project useful, if you have any queries feel free to raise a
 - To be able to provide custom *User-Agent* via the execution command.
 - Add an option for specifying a time interval for the random time-interval option.
 - Further House-Keeping & Beautification of Code.
+
+## PrankMeBot
+
+*PrankMeBot* is a python based [*telegram*](https://telegram.org/) bot, which is meant for **pranking** people by spamming messages on the their 
+telegram inbox. The idea for this project came to me during April Fool's day and utilizes several commonly used libraries, don't missue this program.
+Have fun at your own *responsibility*!
+
+
+### Language : [**Python**](https://python.org)
+
+### Libraries Used : [telegram](https://python-telegram-bot.org/), [time](https://docs.python.org/3/library/time.html), [random](https://docs.python.org/3/library/random.html), [asyncio](https://docs.python.org/3/library/asyncio.html), [optparse](https://docs.python.org/3/library/optparse.html)
+
+### Required Steps
+- Before you use this program, you would need to install the required libraries as mentioned above and can be done using the following command:
+
+```
+pip3 install -r reqprankmebot.txt
+```
+
+- You would also need to obtain your *Bot Token* from BotFather and add it to the file **TOKEN.txt**. In order to get the token, follow the given steps:
+  - Start a conversation with [*Bot-Father*](https://t.me/BotFather).
+  - Create your new bot by typing the following text: **/newbot**
+  - Follow the prompts provided by the bot and give it a name to your liking :)
+  - You'll receive a token like so, which you can copy by double clicking on the token and then paste it into the *TOKEN* file.
+  
+ ``` 
+Done! Congratulations on your new bot. You will find it at t.me/xxxxxBot. You can now add a description, about section and profile
+picture for your bot, see /help for a list of commands. By the way, when you've finished creating your cool bot, ping our Bot Support 
+if you want a better username for it. Just make sure the bot is fully operational before you do this. Use this token to access the
+HTTP API: 5449264661:xxxxxxxxxx-RkqiIpWRtuePV7NIMcU
+Keep your token secure and store it safely, it can be used by anyone to control your bot.
+For a description of the Bot API, see this page: https://core.telegram.org/bots/api
+```
+
+### Documentation
+It utilizes several libraries in order to acheive it's desired function. It utilizes the *optparse* library to parse the options provided by the user, the *time* library is used for setting intervals between each request. It also utilizes the *random* library to set time intervals ranging from 5 to 30 seconds **if** the time interval is *not provided* during execution, a word of caution don't set the time interval below *5* seconds. Last, but the most *important* library is *asyncio* which is used to send [*asynchronous requests*](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Synchronous_and_Asynchronous_Requests) to the Telegram API.
+In order to obtain the ID of the user on telegram, follow the following steps:
+- Go to [*JsonDumpBot*](https://t.me/JsonDumpBot)
+- Forward a message from the desired user to the bot.
+- It will reply to your message with the information about the message forwaded, in JSON format. 
+- The required ID can be found under *forward_from_chat* , like so:
+
+
+```
+   {...
+    "forward_from_chat": {
+          "id": xxxxxxxxx,
+   ...}
+```
+
+
+
+This project is currently compatile only with Python 2, hope to add functionallity for Python 3 in the upcoming versions.
+
 
 ## Future Projects [Coming Soon!]
 
