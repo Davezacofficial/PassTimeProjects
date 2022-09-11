@@ -103,7 +103,7 @@ pip3 install -r reqprankmebot.txt
   - Start a conversation with [*Bot-Father*](https://t.me/BotFather).
   - Create your new bot by typing the following text: **/newbot**
   - Follow the prompts provided by the bot and give it a name to your liking :)
-  - You'll receive a token like so, which you can copy by double clicking on the token and then pasting it into the *TOKEN* file.
+  - You'll receive a token like so, which you can copy by double clicking on the token and then pasting it into the *TOKEN.txt* file.
   
  ``` 
 Done! Congratulations on your new bot. You will find it at t.me/xxxxxBot. You can now add a description, about section and profile
